@@ -46,7 +46,12 @@ else
 
 		if [ $anw == "y" ]; then
 			echo "Good Job!"
+			
+			echo "${newList[rn1]}" >>  ./completed.txt
+			echo "${currentList[rn2]}" >>  ./understand.txt
+
 			break
+
 		elif [ $anw == "n" ]; then
 			echo "PlaceHolder"
 		else 
