@@ -48,12 +48,19 @@ else
 			echo "Good Job!"
 			
 			echo "${newList[rn1]}" >>  ./completed.txt
-			echo "${currentList[rn2]}" >>  ./understand.txt
+
+			read -p "Would you like to move "${currentList[rn2]}" to the understood list y/n: " choice 
+
+			if [ $choice == "y" ]; then
+				echo "${currentList[rn2]}" >>  ./understand.txt
 
 			break
 
 		elif [ $anw == "n" ]; then
-			echo "PlaceHolder"
+
+			echo "Good Luck tomorrow"
+			break
+
 		else 
 			echo "Bad input"
 		fi
