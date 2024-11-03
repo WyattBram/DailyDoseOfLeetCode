@@ -28,13 +28,10 @@ oldlen=${#oldList[@]}
 
 if [ $newlen -lt 1 ]; then
 	echo "You must populate toDo list"
-
 elif [ $currentlen -lt 1 ]; then
 	echo "You must populate completed list"
-
 elif [ $oldlen -lt 1 ]; then
 	echo "You must populate understand list"
-
 else
 	rn1=$((0 + $RANDOM % newlen))
 	rn2=$((0 + $RANDOM % currentlen))
