@@ -59,6 +59,7 @@ else
 
 			break
 
+			fi
 		elif [ $anw == "n" ]; then
 
 			echo "Good Luck tomorrow"
