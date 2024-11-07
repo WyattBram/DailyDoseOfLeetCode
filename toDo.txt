@@ -1,1 +1,2 @@
-1.
+36. Valid Sudoku
+84. Largest Rectangular Histogram
