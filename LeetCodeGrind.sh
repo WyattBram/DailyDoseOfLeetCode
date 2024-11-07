@@ -40,33 +40,37 @@ else
 	rn2=$((0 + $RANDOM % currentlen))
 	rn3=$((0 + $RANDOM % oldlen))
 
-	echo "New Question:     ${newList[rn1]}"
-	echo "Current Question: ${currentList[rn2]}"
-	echo "Retired Question: ${oldList[rn3]}"
+	printf "\nNew Question:     ${newList[rn1]}"
+	printf "\nCurrent Question: ${currentList[rn2]}"
+	printf "\nRetired Question: ${oldList[rn3]}\n\n"
 	
 	while true; do
 		read -p "Did you complete the questions (y/n): " anw
-
+		
 		if [ $anw == "y" ]; then
-			echo "Good Job!"
 			
+
 			echo "${newList[rn1]}" >>  ./completed.txt
+			ex -s +"g/"${currentList[rn2]}"/d" -cwq ./toDo.txt
 
-			read -p "Would you like to move "${currentList[rn2]}" to the understood list y/n: " choice 
+			printf "\n"
 
+			read -p "Would you like to move \""${currentList[rn2]}"\" to the understood list y/n: " choice 
+			
 			if [ $choice == "y" ]; then
-				echo "${currentList[rn2]}" >>  ./understand.txt
-
-			break
+				printf "${currentList[rn2]}" >>  ./understand.txt
+				ex -s +"g/"${currentList[rn2]}"/d" -cwq ./completed.txt
 
 			fi
+			break
+
 		elif [ $anw == "n" ]; then
 
-			echo "Good Luck tomorrow"
+			printf "\nGood Luck tomorrow\n"
 			break
 
 		else 
-			echo "Bad input"
+			printf "\nBad input\n"
 		fi
 	done
 fi

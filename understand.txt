@@ -1,1 +1,9 @@
+217. Contain Duplicate
 1. Two Sum
+242. Valid Anagram
+20. Valid Parentheses
+739. Daily Temperature
+347. Top K Frequent Elements
+22. Generate Parentheses
+49. Group Anagrams
+36. Valid Sudoku

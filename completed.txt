@@ -1,3 +1,5 @@
-1. Completed Placeholder1
-2. Completed Placeholder2
-3. Completed Placeholder3
+128. Longest Consecutive Sequence
+238. Product of Array Except Self
+155. Design Min Stack
+150. Reverse Polish Notation
+84. Largest Rectangular Histogram
