@@ -2,4 +2,3 @@
 238. Product of Array Except Self
 155. Design Min Stack
 150. Reverse Polish Notation
-84. Largest Rectangular Histogram
