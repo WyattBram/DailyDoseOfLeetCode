@@ -5,3 +5,8 @@
 739. Daily Temperature
 125. Is Valid Palindrome
 167. Two Sum II
+74. Search 2D matrix
+206. Reverse Linked List
+141. Linked List Cycle
+226. Invert Binary Tree
+100. Is Same Tree
